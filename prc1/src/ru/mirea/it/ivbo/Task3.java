@@ -1,4 +1,4 @@
-package mirea.ivbo1;
+package ru.mirea.it.ivbo;
 
 public class Task3 {
     public static void main(String[] args) {
