@@ -1,4 +1,4 @@
-package ru.mirea.it.ivbo;
+package ru.mirea.it.ivbo.one;
 import java.util.Scanner;
 
 public class Task5 {
