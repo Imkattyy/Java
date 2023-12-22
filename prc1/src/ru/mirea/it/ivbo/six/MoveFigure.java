@@ -136,7 +136,7 @@ class MovableRectangle extends MovablePoint implements Movable {
             topLeft.setY(topLeft.getY() + topLeft.getySpeed());
             System.out.println("Центр окружности переместился на " + topLeft.getySpeed() + " клеточек вверх.");
         } else
-            System.out.println("Скорости точек различаются разных концов прямоугольника различаются. Действие не может быть выполненщ.");
+            throw new IllegalArgumentException("Скорости точек различаются разных концов прямоугольника различаются. Действие не может быть выполнено.");
     }
 
     public void moveDown() {
@@ -145,7 +145,7 @@ class MovableRectangle extends MovablePoint implements Movable {
             topLeft.setY(topLeft.getY() - topLeft.getySpeed());
             System.out.println("Центр окружности переместился на " + topLeft.getySpeed() + " клеточек вниз.");
         } else
-            System.out.println("Скорости точек различаются разных концов прямоугольника различаются. Действие не может быть выполненщ.");
+            throw new IllegalArgumentException("Скорости точек различаются разных концов прямоугольника различаются. Действие не может быть выполнено.");
     }
 
     public void moveLeft() {
@@ -154,7 +154,7 @@ class MovableRectangle extends MovablePoint implements Movable {
             topLeft.setX(topLeft.getX() - topLeft.getxSpeed());
             System.out.println("Центр окружности переместился на " + topLeft.getxSpeed() + " клеточек влево.");
         } else
-            System.out.println("Скорости точек различаются разных концов прямоугольника различаются. Действие не может быть выполненщ.");
+            throw new IllegalArgumentException("Скорости точек различаются разных концов прямоугольника различаются. Действие не может быть выполнено.");
     }
 
     public void moveRight() {
@@ -163,7 +163,7 @@ class MovableRectangle extends MovablePoint implements Movable {
             topLeft.setX(topLeft.getX() - topLeft.getxSpeed());
             System.out.println("Центр окружности переместился на " + topLeft.getxSpeed() + " клеточек вправо.");
         } else
-            System.out.println("Скорости точек различаются разных концов прямоугольника различаются. Действие не может быть выполненщ.");
+            throw new IllegalArgumentException("Скорости точек различаются разных концов прямоугольника различаются. Действие не может быть выполнено.");
     }
 }
 

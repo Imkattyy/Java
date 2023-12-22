@@ -45,11 +45,6 @@ public class Animation {
         panel.setVisible(true);
     }
 
-    public static void main(String[] args) {
-        Animation MyAnimation = new Animation();
+    public static void main(String[] args) {Animation MyAnimation = new Animation();
     }
-
-
-
-
 }
